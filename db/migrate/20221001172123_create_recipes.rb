@@ -4,6 +4,7 @@ class CreateRecipes < ActiveRecord::Migration[6.1]
       t.string :title
       t.string :meal
       t.string :directions
+      t.references :chef, foreign_key: { to_table: :users }
       # t.integer :_id # this is our foreign key
       t.timestamps
     end
