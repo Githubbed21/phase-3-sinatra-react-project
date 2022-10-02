@@ -7,7 +7,8 @@ class UsersController < Sinatra::Base
   end
 
   post "/login" do
-    User.find_by(username:, password:)
+   # User.find_by(username:, password:)
   end
+
 
 end
